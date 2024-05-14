@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/donate.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-family: "Poetsen One", sans-serif;
+    color: #fb3503;  
+    text-align: center;  
+    background-color: black; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.donor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    
+}
+
+.donor {
+    border: 5px solid #d46a6a;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(214, 232, 185);
+    transition: transform 0.3s;
+}
+.donor:hover{
+    transform: translateY(-5px);
+}
+
+.donor h2 {
+    margin-top: 0;
+    color: #f45105;
+            
+            transition: transform 0.3s;
+            display: inline;
+}
+.donor h2:hover {
+            transform: translateY(-5px);
+            text-decoration: underline;
+        }
+       a {
+            text-decoration: none;
+        }
+
+/* @media (max-width: 600px) {
+    .donor-list {
+        grid-template-columns: 1fr;
+    }
+} */
+
+        </style>
+</head>
+<body>
+
+    <a href="services.html"><img width="50px" height="50px" src="images/back.png"/>Back</a>
+    <div class="container">
+        <h1>Donor List</h1>
+        <div class="donor-list">
+            <div class="donor">
+                <h2>Vishnu</h2>
+                <h4>Blood group : A+</h4>
+                <p>Area: Madurai</p>
+                <p>Contact: 9767886678</p>
+            </div>
+            <div class="donor">
+                <h2>Kishor</h2>
+                <h4>Blood group : O+</h4>
+                <p>Area: Madurai</p>
+                <p>Contact: 9769986678</p>
+            </div>
+            <div class="donor">
+                <h2>Mani</h2>
+                <h4>Blood group : B+</h4>
+                <p>Area: Madurai</p>
+                <p>Contact: 7788996678</p>
+            </div>
+            <div class="donor">
+                <h2>Kumar</h2>
+                <h4>Blood group : AB+</h4>
+                <p>Area: Madurai</p>
+                <p>Contact: 8667886678</p>
+            </div>
+            <div class="donor">
+                <h2>Manoj</h2>
+                <h4>Blood group : A-</h4>
+                <p>Area: Madurai</p>
+                <p>Contact: 9767886678</p>
+            </div>
+            <div class="donor">
+                <h2>Babu</h2>
+                <h4>Blood group : O-</h4>
+                <p>Area: Madurai</p>
+                <p>Contact: 9767886678</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Poetsen One", sans-serif;
+            margin: 0;
+            background-color: #6dc0cd;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #c22121;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f9f5f5;
+            text-align: center;
+            padding: 14px 20px;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            font-family: "Poetsen One", sans-serif;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: rgb(221, 21, 21);
+        }
+        .navbar .logo-text {
+            color: #f9f5f5;
+            font-family: "Poetsen One", sans-serif;
+            font-size: 1.5rem;
+            padding-top: 10px;
+            padding-left: 700px;
+            display: flex; 
+            align-items: center; 
+        }
+        .navbar .logo-text img {
+            height: 23px;
+            width: 23px;
+            margin-right: 5px; 
+        }
+        .contact-container {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #c22121;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #a11717;
+        }
+        .contact-container:hover{
+            background-color: beige;
+        }
+        .w3-circle{border-radius:50%}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutus.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <span class="logo-text"><img src="images/logo.png" class="w3-circle" alt="Avatar"> <b>Blood Bank </b></span>
+    </div>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to contact us using the form below:</p>
+        <form class="contact-form" action="index.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
